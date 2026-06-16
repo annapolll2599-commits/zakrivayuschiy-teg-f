@@ -34,16 +34,11 @@
 }
 
 .header {
-  padding-block-start: var(--padding-header);
-  padding-block-end: var(--padding-header);
+  padding-block-start: calc(var(--padding-header) + clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem));
+  padding-block-end: calc(var(--padding-header) + clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem));
 }
 
-.header__container {
-  padding-block-start: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
-  padding-block-end: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
-}
-
-.header__container,
+.header,
 .save-button {
   display: flex;
   align-items: center;
@@ -51,7 +46,7 @@
   flex-direction: column;
 }
 
-.header__container,
+.header,
 .card {
   flex-direction: column;
   min-inline-size: 100%;
@@ -85,6 +80,7 @@
 }
 
 .card__image-area {
+  margin: 0;
   position: relative;
 }
 
@@ -112,35 +108,35 @@
   aspect-ratio: 1 / 1;
 }
 
-.filter-grayscale .card__picture {
+.card__picture.filter-grayscale {
   filter: grayscale(0.7);
 }
 
-.filter-opacity .card__picture {
+.card__picture.filter-opacity {
   filter: opacity(0.8);
 }
 
-.filter-mix .card__picture {
+.card__picture.filter-mix {
   filter: invert(0.7) contrast(1) brightness(100%);
 } 
 
-.filter-contrast .card__picture {
+.card__picture.filter-contrast {
   filter: contrast(20%);
 }
 
-.filter-invert .card__picture {
+.card__picture.filter-invert {
   filter: invert(0.7);
 }
 
-.filter-sepia .card__picture {
+.card__picture.filter-sepia {
   filter: sepia(80%);
 }
 
-.filter-blur .card__picture {
+.card__picture.filter-blur {
   filter: blur(0.2rem);
 }
 
-.filter-hue-rotate .card__picture {
+.card__picture.filter-hue-rotate {
   filter: hue-rotate(0.5turn);
 }
 
@@ -168,7 +164,7 @@
   }
 }
 
-.filter-blur .card__badge {
+.card__badge--no-wrap {
   text-wrap: nowrap;
 }
 
