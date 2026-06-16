@@ -15,21 +15,21 @@
     </head>
     <body class="page">
         <header class="header">
-            <div class="header__container">
-                <div class="header__brand">&lt;/html&gt;</div>
-                <h1 class="header__heading">закрывающий тег</h1>
-            </div>
+            <a class="header__brand" href="#">&lt;/html&gt;</a>
+            <h1 class="header__heading">закрывающий тег</h1>
         </header>
         <main>
-            <ul class="cards">
-                <li class="card filter-grayscale">
+            <div class="cards">
+                <article class="card">
                     <h2 class="card__title">
                         Фритрек и нулевой спринт: Подготовка к работе
                     </h2>
-                    <div class="card__image-area">
-                        <label class="card__badge">&lt;/HTML&gt;</label>
-                        <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture" />
-                    </div>
+                    <figure class="card__image-area">
+                        <figcaption class="card__badge">&lt;/HTML&gt;</figcaption>
+                        <picture>
+                            <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture filter-grayscale" loading="lazy" />
+                        </picture>
+                    </figure>
                     <div class="card__content">
                         <p class="card__paragraph">
                             Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
@@ -37,7 +37,7 @@
                         <p class="card__paragraph">Место для ваших воспоминаний о начале обучения.</p>
                     </div>
                     <div class="card__actions">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="Нравится">
                             <svg aria-hidden="true" class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                                 <g class="heart">
                                     <path
@@ -59,13 +59,15 @@
                             <span class="button__text">Like</span>
                         </button>
                     </div>
-                </li>
-                <li class="card filter-opacity">
+                </article>
+                <article class="card">
                     <h2 class="card__title">1 спринт: Я — чистый лист</h2>
-                    <div class="card__image-area">
-                        <label class="card__badge">&lt;/HTML&gt;</label>
-                        <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture" />
-                    </div>
+                    <figure class="card__image-area">
+                        <figcaption class="card__badge">&lt;/HTML&gt;</figcaption>
+                        <picture>
+                            <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture filter-opacity" loading="lazy" />
+                        </picture>
+                    </figure>
                     <div class="card__content">
                         <p class="card__paragraph">
                             На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением
@@ -76,7 +78,7 @@
                         </p>
                     </div>
                     <div class="card__actions">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="Нравится">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                                 <g class="heart">
                                     <path
@@ -98,13 +100,15 @@
                             <span class="button__text">Like</span>
                         </button>
                     </div>
-                </li>
-                <li class="card filter-mix">
+                </article>
+                <article class="card">
                     <h2 class="card__title">1 спринт: А если не получится?</h2>
-                    <div class="card__image-area">
-                        <label class="card__badge">&lt;CSS&gt;</label>
-                        <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture" />
-                    </div>
+                    <figure class="card__image-area">
+                        <figcaption class="card__badge">&lt;CSS&gt;</figcaption>
+                        <picture>
+                            <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture filter-mix" loading="lazy" />
+                        </picture>
+                    </figure>
                     <div class="card__content">
                         <p class="card__paragraph">
                             Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
@@ -114,7 +118,7 @@
                         </p>
                     </div>
                     <div class="card__actions">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="Нравится">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                                 <g class="heart">
                                     <path
@@ -136,13 +140,15 @@
                             <span class="button__text">Like</span>
                         </button>
                     </div>
-                </li>
-                <li class="card filter-contrast">
+                </article>
+                <article class="card">
                     <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-                    <div class="card__image-area">
-                        <label class="card__badge">&lt;desigions&gt;</label>
-                        <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture" />
-                    </div>
+                    <figure class="card__image-area">
+                        <figcaption class="card__badge">&lt;desigions&gt;</figcaption>
+                        <picture>
+                            <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture filter-contrast" loading="lazy" />
+                        </picture>
+                    </figure>
                     <div class="card__content">
                         <p class="card__paragraph">
                             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены
@@ -153,7 +159,7 @@
                         </p>
                     </div>
                     <div class="card__actions">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="Нравится">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                                 <g class="heart">
                                     <path
@@ -175,13 +181,15 @@
                             <span class="button__text">Like</span>
                         </button>
                     </div>
-                </li>
-                <li class="card filter-invert">
+                </article>
+                <article class="card">
                     <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-                    <div class="card__image-area">
-                        <label class="card__badge">care</label>
-                        <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture" />
-                    </div>
+                    <figure class="card__image-area">
+                        <figcaption class="card__badge">care</figcaption>
+                        <picture>
+                            <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture filter-invert" loading="lazy" />
+                        </picture>
+                    </figure>
                     <div class="card__content">
                         <p class="card__paragraph">
                             Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если
@@ -192,7 +200,7 @@
                         </p>
                     </div>
                     <div class="card__actions">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="Нравится">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                                 <g class="heart">
                                     <path
@@ -214,13 +222,15 @@
                             <span class="button__text">Like</span>
                         </button>
                     </div>
-                </li>
-                <li class="card filter-sepia">
+                </article>
+                <article class="card">
                     <h2 class="card__title">3 спринт: Обходные стратегии</h2>
-                    <div class="card__image-area">
-                        <label class="card__badge">&lt;support&gt;</label>
-                        <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture" />
-                    </div>
+                    <figure class="card__image-area">
+                        <figcaption class="card__badge">&lt;support&gt;</figcaption>
+                        <picture>
+                            <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture filter-sepia" loading="lazy" />
+                        </picture>
+                    </figure>
                     <div class="card__content">
                         <p class="card__paragraph">
                             На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.
@@ -230,7 +240,7 @@
                         </p>
                     </div>
                     <div class="card__actions">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="Нравится">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                                 <g class="heart">
                                     <path
@@ -252,13 +262,15 @@
                             <span class="button__text">Like</span>
                         </button>
                     </div>
-                </li>
-                <li class="card filter-blur">
+                </article>
+                <article class="card">
                     <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-                    <div class="card__image-area">
-                        <label class="card__badge">&lt;lifes-style: none;&gt;</label>
-                        <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture" />
-                    </div>
+                    <figure class="card__image-area">
+                        <figcaption class="card__badge card__badge--no-wrap">&lt;lifes-style: none;&gt;</figcaption>
+                        <picture>
+                            <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture filter-blur" loading="lazy" />
+                        </picture>
+                    </figure>
                     <div class="card__content">
                         <p class="card__paragraph">
                             Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты
@@ -269,7 +281,7 @@
                         </p>
                     </div>
                     <div class="card__actions">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="Нравится">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                                 <g class="heart">
                                     <path
@@ -291,13 +303,15 @@
                             <span class="button__text">Like</span>
                         </button>
                     </div>
-                </li>
-                <li class="card filter-hue-rotate">
+                </article>
+                <article class="card">
                     <h2 class="card__title">«Сейчас я здесь»</h2>
-                    <div class="card__image-area">
-                        <label class="card__badge">&lt;experience&gt;</label>
-                        <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture" />
-                    </div>
+                    <figure class="card__image-area">
+                        <figcaption class="card__badge">&lt;experience&gt;</figcaption>
+                        <picture>
+                            <img src="./images/photo-car.svg" alt="Фото авто" class="card__picture filter-hue-rotate" loading="lazy" />
+                        </picture>
+                    </figure>
                     <div class="card__content">
                         <p class="card__paragraph">
                             Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир
@@ -308,7 +322,7 @@
                         </p>
                     </div>
                     <div class="card__actions">
-                        <button class="card__icon-button" type="button">
+                        <button class="card__icon-button" type="button" aria-label="Нравится">
                             <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                                 <g class="heart">
                                     <path
@@ -330,8 +344,8 @@
                             <span class="button__text">Like</span>
                         </button>
                     </div>
-                </li>
-            </ul>
+                </article>
+            </div>
             <button type="button" class="button save-button" aria-controls="dialog" onclick="window['dialog'].showModal()">
                 <svg class="save-icon" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
                     <use href="./svg/floppy.svg#floppy"></use>
