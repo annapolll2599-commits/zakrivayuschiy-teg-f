@@ -34,8 +34,10 @@
 }
 
 .header {
-  padding-block-start: calc(var(--padding-header) + clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem));
-  padding-block-end: calc(var(--padding-header) + clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem));
+  margin-block-start: var(--padding-header);
+  margin-block-end: var(--padding-header);
+  padding-block-start: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  padding-block-end: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
 }
 
 .header,
@@ -72,6 +74,7 @@
   font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
   font-variation-settings: 'wght' var(--font-weight-base, 400);
   line-height: 1;
+  text-decoration: none;
 }
 
 .header__heading {
